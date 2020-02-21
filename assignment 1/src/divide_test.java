@@ -28,6 +28,12 @@ public class divide_test {
 		assertEquals(0, output, 0);
 	}
 	catch(Exception e) {}
+	try {
+		output = test.divide(1, 3) ;
+		assertEquals(0.333, output, 0.01);
+	}
+	catch(Exception e) {}	
+
 		
 
 }}
