@@ -8,10 +8,10 @@ public class calc implements ICalculator {
 	}
 
 	@Override
-	public float divide(int x, int y)throws Exception {
+	public float divide(int x, int y)throws RuntimeException {
 		if(x!=0) {
 		if (y==0) {
-			throw new Exception();
+			throw new RuntimeException("Can't divide by zero");
 		}
 		
 		return (float) x/y;
